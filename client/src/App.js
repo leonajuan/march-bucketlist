@@ -1,24 +1,34 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import './App.css';
+import Header from './components/Header'
+import NavBar from './components/NavBar'
+import NewActivityForm from './components/NewActivityForm'
+import ActivitiesList from './components/ActivitiesList'
 
 function App() {
-  const [count, setCount] = useState(0);
+
+  const [activities, setActivities] = useState([])
 
   useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
+    fetch('/activities')
+      .then(res => res.json())
+      .then(activitiesData => {
+        setActivities(activitiesData)
+      })
+  }, [])
 
   return (
     <BrowserRouter>
+      <Header />
+      <NavBar />
       <div className="App">
         <Switch>
-          <Route path="/testing">
-            <h1>Test Route</h1>
+          <Route path="/form">
+            <NewActivityForm />
           </Route>
           <Route path="/">
-            <h1>Page Count: {count}</h1>
+            <ActivitiesList activities={activities} />
           </Route>
         </Switch>
       </div>
