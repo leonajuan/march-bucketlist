@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: bucketlist_render_march_production
-  username: bucketlist_render_march
-  password: <%= ENV["BUCKETLIST_RENDER_MARCH_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
