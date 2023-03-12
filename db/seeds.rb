@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Activity.destroy_all
+
+puts "🌱 Seeding activities..."
+a1 = Activity.create(name: "Dinner at Rubirosa", location: "Rubirosa Ristorante", address: "235 Mulberry St, New York, NY 10012", image: "https://infatuation.imgix.net/EmilyS_Rubirosa_Horizontal1.jpg", completed: true)
+a2 = Activity.create(name: "Jennifer Chalsty Planetarium", location: "Liberty Science Center", address: "222 Jersey City Blvd, Jersey City, NJ 07305", image: "https://thetenaflyecho.com/wp-content/uploads/2018/01/11.17.17_LSC_PlanetariumMarketing_edit_2-900x600.jpg", completed: false)
+a3 = Activity.create(name: "Avatar: The Way of Water", location: "AMC Garden State 16", address: "4000 Garden State Plaza Blvd 4 & 17, Paramus, NJ 07652", image: "https://variety.com/wp-content/uploads/2022/03/MCDAVAT_FE018.jpg", completed: true)
+a4 = Activity.create(name: "Las Vegas Sushi", location: "Las Vegas Sushi", address: "1475 Bergen Blvd M, Fort Lee, NJ 07024", image: "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/69214c8c-221c-45fe-8e77-f60b13f5aadd.jpg", completed: true)
+a5 = Activity.create(name: "MoMA", location: "The Museum of Modern Art", address: "11 W 53rd St, New York, NY 10019", image: "https://preview.redd.it/frank-ocean-wolfgang-tillmans-moma-v0-vj7ayn92i6r91.jpg?auto=webp&s=fc396f5235d5854d4d9c59367778013f91a2f9b5", completed: true)
+a6 = Activity.create(name: "Happy Hour at Haven", location: "Haven Riverfront Restaurant and Bar", address: "2 Main St, Edgewater, NJ 07020", image: "https://static.wixstatic.com/media/30c674_afc75eaefd93481fa38c6be3ea803d30~mv2.jpg/v1/fit/w_2500,h_1330,al_c/30c674_afc75eaefd93481fa38c6be3ea803d30~mv2.jpg", completed: true)
+a7 = Activity.create(name: "Wetzel's Pretzels", location: "Garden State Plaza", address: "One Garden State Plaza, Paramus, NJ 07652", image: "https://d1ralsognjng37.cloudfront.net/c09d35e0-bfff-4837-83f0-d93253207b38.jpeg", completed: true)
+a8 = Activity.create(name: "Ant-Man and the Wasp: Quantumania", location: "Garden State Plaza", address: "One Garden State Plaza, Paramus, NJ 07652", image: "https://images.thedirect.com/media/article_full/ant-man-quantumania-genre-mcu-marvel.jpg", completed: true)
+a9 = Activity.create(name: "Finish 299 Cats and a Dog Puzzle", location: "The Beacon", address: "88 Clifton Pl, Apt 506, Jersey City, NJ 07304", image: "https://m.media-amazon.com/images/S/aplus-media/vc/de3ec221-be60-4799-b889-89bd9bd8ad92.__CR0,49,2048,1267_PT0_SX970_V1___.jpg", completed: false)
+a10 = Activity.create(name: "Los Angeles", location: "Los Angeles, CA", address: "Los Angeles, CA", image: "https://i.natgeofe.com/n/f7145fb3-d6ad-41bb-8065-1d7312e72bf4/hollywood-boulevard-los-angeles-california_4x3.jpg", completed: false)
+a11 = Activity.create(name: "Marvel Marathon", location: "The Beacon", address: "88 Clifton Pl, Apt 506, Jersey City, NJ 07304", image: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=2880&aspectRatio=1.78&format=jpeg", completed: false)
+a12 = Activity.create(name: "Beach Day", location: "Asbury Park", address: "1300 Ocean Ave N, Asbury Park, NJ 07712", image: "https://www.tripsavvy.com/thmb/X9Rc2pZfsfS6j-7VC3bdYCiEWm0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-499475083-59a5c721845b340011609d61.jpg", completed: false)
+a13 = Activity.create(name: "Tokyo, Japan", location: "Tokyo, Japan", address: "Tokyo, Japan", image: "https://assets.vogue.com/photos/5e387ae1be72df00088bf8c8/master/w_2560%2Cc_limit/EEX74X.jpg", completed: false)
+a14 = Activity.create(name: "Glossier", location: "Glossier NYC", address: "72 Spring St, New York, NY 10012", image: "https://cdn.shopify.com/s/files/1/0627/9164/7477/files/ATL-16x9-locations-page-1.jpg?v=1667850441", completed: false)
+a15 = Activity.create(name: "Champs Diner", location: "Champs Diner", address: "197 Meserole St, Brooklyn, NY 11206", image: "https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/brooklyn/east-williamsburg/champs-diner/11017814_893083937396882_9052977328578213872_n_299006722e285f47655d17d1c9136337.jpg", completed: true)
+a16 = Activity.create(name: "Barbie", location: "Garden State Plaza", address: "One Garden State Plaza, Paramus, NJ 07652", image: "https://i0.wp.com/highoncinemaa.com/wp-content/uploads/2023/01/Barbie-Movie-All-Leaks-and-Footages-So-Far-Of-Margot-Robbie-and-Ryan-Gosling.jpg?fit=1024%2C576&ssl=1", completed: false)
+a17 = Activity.create(name: "Tenth Street Pasta & Pizza", location: "Tenth Street Pasta & Pizza", address: "1000 Willow Ave, Hoboken, NJ 07030", image: "https://cdn.shopify.com/s/files/1/0539/3521/0685/files/messages_0_1_503x503.jpg?v=1638832230", completed: false)
+
+puts "🌱 Seeding complete!"
