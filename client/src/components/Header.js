@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <h2>Bucketlist</h2>
+    <h1 className='header'>Leona + Jalil's Bucket List 💗</h1>
   )
 }
 

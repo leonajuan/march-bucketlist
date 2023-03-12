@@ -7,8 +7,8 @@ function ActivitiesList({ activities }) {
   })
 
   return (
-    <div>
-      <li>{activitiesComponents}</li>
+    <div className='cards'>
+      <li className='activities-list'>{activitiesComponents}</li>
     </div>
   )
 }

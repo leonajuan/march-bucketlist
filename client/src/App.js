@@ -20,9 +20,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />
-      <NavBar />
-      <div className="App">
+
+      <div className="app">
+        <Header />
+        <NavBar />
         <Switch>
           <Route path="/form">
             <NewActivityForm />
