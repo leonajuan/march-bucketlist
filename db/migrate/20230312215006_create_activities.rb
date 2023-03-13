@@ -6,7 +6,7 @@ class CreateActivities < ActiveRecord::Migration[7.0]
       t.string :location
       t.string :address 
       t.string :image
-      t.boolean :completed
+      t.boolean :completed, null: false, default: false
 
       t.timestamps
     end
