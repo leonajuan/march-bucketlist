@@ -35,7 +35,10 @@
 }
 
 .card-image {
-  width: 50%;
+  object-fit: fill;
+  max-width: 50%;
+  max-height: 300px;
+  /* width: 50%; */
 }
 
 .card-name, .card-location, .card-address, .card-completed {
@@ -116,4 +119,37 @@
   font-weight: 400;
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  text-transform: lowercase;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 8px;
+  color: black;
+}
+
+.navbar a:hover{
+  color:  #FF327C;
+  font-style: italic;
+  font-weight: 700;
 }

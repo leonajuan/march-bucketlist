@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function NewActivityForm() {
+function NewActivityForm({ setActivities }) {
 
   const [name, setName] = useState('')
   const [location, setLocation] = useState('')
@@ -24,7 +24,7 @@ function NewActivityForm() {
     })
       .then(res => res.json())
       .then(newActivity => {
-        console.log(newActivity)
+        setActivities(newActivity)
       })
   }
 

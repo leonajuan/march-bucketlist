@@ -26,7 +26,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/form">
-            <NewActivityForm />
+            <NewActivityForm setActivities={setActivities} />
           </Route>
           <Route path="/">
             <ActivitiesList activities={activities} />
